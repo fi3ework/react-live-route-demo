@@ -39,7 +39,7 @@ class Switch extends React.Component {
     const { route } = this.context.router
     const { children } = this.props
     const location = this.props.location || route.location
-
+    let renderChilds = []
     let match, child
     React.Children.forEach(children, element => {
       if (match == null && React.isValidElement(element)) {

@@ -21,10 +21,20 @@ class ListPage extends React.Component {
         <p>It will not unmount after mounted and that means it will only mount once.</p>
       </div>
     )
+    const placeholder = Array(60)
+      .fill('')
+      .map((item, index) => {
+        return (
+          <p className="placeholder-text" key={index}>
+            {index} - You can scroll the screen to test if react-live-route can restore scroll position.
+          </p>
+        )
+      })
     return (
-      <div>
+      <div className="about">
         {timer}
         {desc}
+        {placeholder}
       </div>
     )
   }

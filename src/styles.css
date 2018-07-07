@@ -16,8 +16,12 @@ a {
   padding: 10px 0;
   left: 0;
   bottom: 0;
-  background-color: #ccc;
-  border-top: 1px solid #666;
+  background-color: #aaa;
+  border-top: 2px solid #888;
+}
+
+.bar a {
+  color: #fff;
 }
 
 .item {
@@ -36,7 +40,6 @@ a {
 
 .desc {
   color: #666;
-  width: 90%;
   margin: 0 auto;
   text-align: left;
 }
@@ -59,4 +62,26 @@ code {
   padding: 2px 4px;
   border-radius: 2px;
   color: darkcyan;
+}
+
+.about,
+.list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.entry {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.2s ease-in;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.entry:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.placeholder-text {
+  color: #999;
 }

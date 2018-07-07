@@ -38,7 +38,7 @@ class ListPage extends React.Component {
       </div>
     )
     return (
-      <div>
+      <div className="list">
         {timer}
         {desc}
         {list}
